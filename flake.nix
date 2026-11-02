@@ -22,11 +22,11 @@
         in
         {
           default = theme;
-          my-grub-theme = theme;
+          grub-theme = theme;
         }
       );
       overlays.default = final: prev: {
-        my-grub-theme = final.callPackage ./default.nix { };
+        grub-theme = final.callPackage ./default.nix { };
       };
     };
 }
